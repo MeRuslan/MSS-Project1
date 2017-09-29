@@ -20,7 +20,7 @@ menu UserControlMenu = {
     dispense_main_med_flow, enter_value, erase_and_unlock_line,
     flow_unblocked, sound_alarm, lock_unit, plug_in, press_cancel, 
     press_set, set_rate, silence_alarm, turn_off, unlock_unit, unplug,
-    flow_blocked
+    flow_blocked, sleep_timer_went_off, key_pressed
 }
 
 //======================
@@ -87,10 +87,15 @@ SETUP[params:ParamsStateT][lineLock:LineLockStateT] =
     turn_off -> POWER_OFF
     |
     when (params == ParamsNotSet && lineLock == LineUnlocked)
-        set_rate -> enter_value ->
-            (press_set -> SETUP[ParamsSet][lineLock]
-             |
-             press_cancel -> SETUP[ParamsNotSet][lineLock])
+        set_rate -> 
+			(enter_value ->
+            	(press_set -> SETUP[ParamsSet][lineLock]
+             	|
+             	press_cancel -> SETUP[ParamsNotSet][lineLock]
+			 	|
+			 	sleep_timer_went_off -> SLEEP_MODE[params][lineLock])
+			 |
+			 sleep_timer_went_off -> SLEEP_MODE[params][lineLock])
     |
     when (params == ParamsSet && lineLock == LineUnlocked)
         clear_rate -> SETUP[ParamsNotSet][lineLock]
@@ -103,6 +108,8 @@ SETUP[params:ParamsStateT][lineLock:LineLockStateT] =
     |
     when (lineLock == LineLocked)
         erase_and_unlock_line -> SETUP[params][LineUnlocked]
+	|
+	sleep_timer_went_off -> SLEEP_MODE[params][lineLock]
 ),
 
 //
@@ -147,5 +154,16 @@ INFUSION_BLOCKED[unitLock:UnitLockStateT][alarm:AlarmStateT] =
         silence_alarm -> INFUSION_BLOCKED[unitLock][AlarmSilenced]
     |
     flow_unblocked -> INFUSION[unitLock]
-).
+),
 
+//
+// Pump sleep (no key was pressed long time)
+//
+SLEEP_MODE[params:ParamsStateT][lineLock:LineLockStateT] = 
+(
+	unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+	key_pressed -> SETUP[params][lineLock]
+).
