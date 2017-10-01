@@ -20,7 +20,8 @@ menu UserControlMenu = {
     dispense_main_med_flow, enter_value, erase_and_unlock_line,
     flow_unblocked, sound_alarm, lock_unit, plug_in, press_cancel, 
     press_set, set_rate, silence_alarm, turn_off, unlock_unit, unplug,
-    flow_blocked, sleep_timer_went_off, key_pressed
+    flow_blocked, sleep_timer_went_off, key_pressed, 
+    electricity_on, electricity_off
 }
 
 //======================
@@ -58,6 +59,15 @@ const UnitUnlocked = 6  // the keypad of the pump is not locked
 const UnitLocked   = 7  // the keypad of the pump is locked
 
 range UnitLockStateT = UnitUnlocked .. UnitLocked
+
+//
+// States of the power source (whether battery powered by battery or grid)
+//
+const PoweredByBattery = 8      // pump powered by battery
+const NotPoweredByBattery = 9   // pump powered by external power line
+const LowBatteryLife = 10       // pump powered by external power line
+
+range BatteryStateT = PoweredByBattery .. LowBatteryLife
 
 //=====================
 // Process Definitions
@@ -104,7 +114,7 @@ SETUP[params:ParamsStateT][lineLock:LineLockStateT] =
         connect_set -> purge_air -> lock_line -> SETUP[params][LineLocked]
     |
     when (lineLock == LineLocked)
-        confirm_settings -> INFUSION[UnitUnlocked]
+        confirm_settings -> INFUSION[UnitUnlocked][NotPoweredByBattery]
     |
     when (lineLock == LineLocked)
         erase_and_unlock_line -> SETUP[params][LineUnlocked]
@@ -119,43 +129,67 @@ SETUP[params:ParamsStateT][lineLock:LineLockStateT] =
 // - Always be able to turn the unit off, even if locked
 // - Allow the user to lock/unlock the unit
 // - Errors could occur with the pump (e.g., line became pinched or plugged)
+// - Settings can be changed only when pump is powered by grid (not battery)
 //
-INFUSION[unitLock:UnitLockStateT] =
+INFUSION[unitLock:UnitLockStateT][battery:BatteryStateT] =
 (
     unplug -> UNPLUGGED
     |
     turn_off -> POWER_OFF
     |
-    when (unitLock == UnitUnlocked)
+    when (unitLock == UnitUnlocked && battery == NotPoweredByBattery)
         change_settings -> SETUP[ParamsSet][LineLocked]
     |
     when (unitLock == UnitUnlocked)
-        lock_unit -> INFUSION[UnitLocked]
+        lock_unit -> INFUSION[UnitLocked][battery]
     |
     when (unitLock == UnitLocked)
-        unlock_unit -> INFUSION[UnitUnlocked]
+        unlock_unit -> INFUSION[UnitUnlocked][battery]
     |
-    dispense_main_med_flow -> INFUSION[unitLock]
+    dispense_main_med_flow -> INFUSION[unitLock][battery]
     |
-    flow_blocked -> sound_alarm -> INFUSION_BLOCKED[unitLock][AlarmActivated]
+    when (battery == PoweredByBattery)
+        electricity_on -> INFUSION[unitLock][NotPoweredByBattery]
+    |
+    when (battery == NotPoweredByBattery)
+        electricity_off -> notify_visually -> INFUSION[UnitUnlocked][PoweredByBattery]
+    |
+    when (battery == PoweredByBattery)
+        battery_low -> BATTERY_ALARM[unitLock]
+    |
+    flow_blocked -> sound_alarm -> INFUSION_BLOCKED[unitLock][AlarmActivated][battery]
+),
+
+//
+// Pump battery is too low for operating pump (occurs only when powered by battery)
+//
+BATTERY_ALARM[unitLock:UnitLockStateT] =
+(
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    electricity_on -> INFUSION[unitLock][NotPoweredByBattery]
+    |
+    sound_alarm -> BATTERY_ALARM[unitLock]
 ),
 
 //
 // Pump stuck (medication flow suspended)
 //
-INFUSION_BLOCKED[unitLock:UnitLockStateT][alarm:AlarmStateT] =
+INFUSION_BLOCKED[unitLock:UnitLockStateT][alarm:AlarmStateT][battery:BatteryStateT] =
 (
     unplug -> UNPLUGGED
     |
     turn_off -> POWER_OFF
     |
     when (alarm == AlarmActivated)
-        sound_alarm -> INFUSION_BLOCKED[unitLock][alarm]
+        sound_alarm -> INFUSION_BLOCKED[unitLock][alarm][battery]
     |
     when (alarm == AlarmActivated)
-        silence_alarm -> INFUSION_BLOCKED[unitLock][AlarmSilenced]
+        silence_alarm -> INFUSION_BLOCKED[unitLock][AlarmSilenced][battery]
     |
-    flow_unblocked -> INFUSION[unitLock]
+    flow_unblocked -> INFUSION[unitLock][battery]
 ),
 
 //
