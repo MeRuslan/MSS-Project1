@@ -120,7 +120,10 @@ explain why. (Note: Reference certain parts of your specification that address f
     \item Which aspects of the pump did you choose to model, and which did you choose to leave out?
     \item Were there ambiguities in the English description of the infusion pump that your specification resolves?
     \item State four general properties that your pump guarantees (for example, the alarm will always sound if a line becomes clogged), and say briefly why it is guaranteed.
-    \item Does your model say what happens if the power goes out in the middle of operation?
+    \item Does your model say what happens if the power goes out in the middle of operation? 
+    \\
+    \textbf{Answer:} Yes. The proposed model describes how the pump must behave when power goes off when pump is delivering the medications. 
+    \\However, it does not consider the case when the power goes off when medical stuff sets the parameters. Because it's much more important to change power source when a pump is working and there's no medical personnel nearby. If not all of the parameters are set, then personnel shall handle the error before starting a pump up. 
     \item Referring to the additional documentation about the infusion pump on the general project description section of the web site, consider the errors noted about realistic pumps. Which of these types of errors can be illustrated with your pump? Does your pump exclude some of them from happening?
 
 \end{enumerate}
