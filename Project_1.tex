@@ -135,10 +135,11 @@ explain why. (Note: Reference certain parts of your specification that address f
 
 
 How difficult would it be using the current subset of FSP to create
-a 4-line pump? What would have to change in your specification?
+a 4-line pump? What would have to change in your specification?\\
 
-
-
+Suppose that different lines should work independently. It means that different works should be run at the same time. Because of that, we have to use a parallel state machine. This is not allowed in our task.\\
+Assume that it is allowed. We think that the main trouble with a parallel 4-line pump would be input/output operations. What should happen if we switch line during input? Should input save state? Also, there would be some troubles with alarm speaker: How it should work if some problems happen on 2 lines in same time? How to manage situation when we solve problem on one line but in another line problem still be?\\
+In conclusion, we think that most of the problems with parallel work caused by shared resources and synchronization points.
 
 
 \end{document}
