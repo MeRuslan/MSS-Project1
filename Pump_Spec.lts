@@ -109,6 +109,8 @@ SETUP[params:ParamsStateT][lineLock:LineLockStateT] =
     when (lineLock == LineLocked)
         erase_and_unlock_line -> SETUP[params][LineUnlocked]
 	|
+	set_sleep_timer -> SETUP[params][LineUnlocked]
+	|
 	sleep_timer_went_off -> SLEEP_MODE[params][lineLock]
 ),
 
