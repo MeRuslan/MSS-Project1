@@ -82,7 +82,76 @@ UNPLUGGED =
 
 POWER_OFF = 
 (
-    turn_on -> SETUP[ParamsNotSet][LineUnlocked]
+    turn_on -> DRUG
+),
+
+DRUG = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    set_drug -> DRUG_MODE
+),
+
+DRUG_MODE = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    choose_drug_mode -> DRUG_VALUE
+),
+
+DRUG_VALUE = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    enter_value_drug -> DRUG_CONFIGURATE
+),
+
+DRUG_CONFIGURATE = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    check_hard_limit -> DRUG_HARDLIMIT
+),
+DRUG_HARDLIMIT = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    | 
+    hard_limit_exceed -> DRUG
+    | 
+    hard_limit_fit -> DRUG_SOFTLIMIT
+),
+
+DRUG_SOFTLIMIT = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    soft_limit_exceed -> SOFT_LIMIT_WARNING
+    |
+    soft_limit_fit -> DRUG_LIMIT_OK
+),
+
+SOFT_LIMIT_WARNING = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    confirm -> DRUG_LIMIT_OK
+    |
+    cancel -> DRUG
+),
+
+DRUG_LIMIT_OK = (
+    unplug -> UNPLUGGED
+    |
+    turn_off -> POWER_OFF
+    |
+    log_drug_library -> SETUP[ParamsNotSet][LineUnlocked]
 ),
 
 //
