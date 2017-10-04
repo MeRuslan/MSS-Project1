@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))∈(∅ ⦂ ℙ(USER)) ↔ (∅ ⦂ ℙ(USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))∈(∅ ⦂ ℙ(USER)) ↔ (∅ ⦂ ℙ(USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))∈(∅ ⦂ ℙ(USER)) ⇸ (∅ ⦂ ℙ(USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))∈(∅ ⦂ ℙ(USER)) ↔ (∅ ⦂ ℙ(USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))⊆(∅ ⦂ ℙ(USER×USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))⊆(∅ ⦂ ℙ(USER×USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER))⊆(∅ ⦂ ℙ(USER×USER))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_chat_session/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="CONTENT,USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p2,p3,p1,p4,p5,p9,p6,p10,p11">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="active" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chatcontent" org.eventb.core.type="ℙ(USER×USER×CONTENT)"/>
+<org.eventb.core.prIdent name="contacts" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prIdent name="muted" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="muted∈user ↔ user"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="active∈user ⇸ user"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="active⊆chat"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="u2∈user"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="u1∈user∧u2∈user"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="user⊆USER"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="chat∪{u1 ↦ u2}∪{u2 ↦ u1}∈user ↔ user"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="content⊆CONTENT"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="chat∈user ↔ user"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="muted⊆chat"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="chatcontent∈chat ↔ content"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="u1∈user"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="contacts∈user ↔ user"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="chat⊆contacts"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_chat_session/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="active" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="content⊆CONTENT">
+<org.eventb.core.prIdent name="CONTENT" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="active⊆chat"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="u2∈user"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u1∈user"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u1∈user∧u2∈user"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="active⊆chat∪{u1 ↦ u2}∪{u2 ↦ u1}"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="user⊆USER"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_chat_session/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="muted" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="content⊆CONTENT">
+<org.eventb.core.prIdent name="CONTENT" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="u2∈user"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="muted⊆chat"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u1∈user"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u1∈user∧u2∈user"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="user⊆USER"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="muted⊆chat∪{u1 ↦ u2}∪{u2 ↦ u1}"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_chat_session/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="contacts" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="u1 ↦ u2∈contacts"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤∧⊤"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="chat⊆contacts∧u1 ↦ u2∈contacts"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="chat∪{u1 ↦ u2}⊆contacts"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u1 ↦ u2∉chat"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬u1 ↦ u2∈chat"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="chat⊆contacts"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL2"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="CONTENT,USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×USER×CONTENT))∈(∅ ⦂ ℙ(USER×USER)) ↔ (∅ ⦂ ℙ(CONTENT))"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_chat_session/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="CONTENT,USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chatcontent" org.eventb.core.type="ℙ(USER×USER×CONTENT)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="content⊆CONTENT"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="u2∈user"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="chatcontent∈chat ↔ content"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u1∈user"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u1∈user∧u2∈user"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="user⊆USER"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="chatcontent∈chat∪{u1 ↦ u2}∪{u2 ↦ u1} ↔ content"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="select_chat/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.prSets="CONTENT,USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p2,p3,p1,p4,p5,p9,p6,p10,p11">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="active" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chatcontent" org.eventb.core.type="ℙ(USER×USER×CONTENT)"/>
+<org.eventb.core.prIdent name="contacts" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prIdent name="muted" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="muted∈user ↔ user"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="active∈user ⇸ user"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="active⊆chat"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="u2∈user"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="u1∈user∧u2∈user"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="user⊆USER"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="content⊆CONTENT"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="({u1} ⩤ active)∪{u1 ↦ u2}∈user ⇸ user"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="chat∈user ↔ user"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="muted⊆chat"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="chatcontent∈chat ↔ content"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="u1∈user"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="contacts∈user ↔ user"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="chat⊆contacts"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="select_chat/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1,p3,p4">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p9"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="active" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="u1" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="u2" org.eventb.core.type="USER"/>
+<org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="{u1} ⩤ active⊆chat∧u1 ↦ u2∈chat"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="content⊆CONTENT">
+<org.eventb.core.prIdent name="CONTENT" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="active⊆chat"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="u2∈user"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="u1 ↦ u2∈chat"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="u1∈user"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="({u1} ⩤ active)∪{u1 ↦ u2}⊆chat"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="u1∈user∧u2∈user"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="{u1} ⩤ active⊆chat"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="chatting/inv10/INV"/>
+<org.eventb.core.prProof name="delete_content/inv10/INV"/>
+<org.eventb.core.prProof name="clear_content/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="CONTENT,USER">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="chat" org.eventb.core.type="ℙ(USER×USER)"/>
+<org.eventb.core.prIdent name="chatcontent" org.eventb.core.type="ℙ(USER×USER×CONTENT)"/>
+<org.eventb.core.prIdent name="content" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="chatcontent∈chat ↔ content"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

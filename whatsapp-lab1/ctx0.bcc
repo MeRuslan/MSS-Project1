@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scCarrierSet name="CONTENT" org.eventb.core.source="/whatsapp-lab1/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.carrierSet#_eMLFkaNuEeek3qZDwmMYTw" org.eventb.core.type="ℙ(CONTENT)"/>
+<org.eventb.core.scCarrierSet name="USER" org.eventb.core.source="/whatsapp-lab1/ctx0.buc|org.eventb.core.contextFile#ctx0|org.eventb.core.carrierSet#_eMLFkKNuEeek3qZDwmMYTw" org.eventb.core.type="ℙ(USER)"/>
+</org.eventb.core.scContextFile>
