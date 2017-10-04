@@ -78,7 +78,7 @@ the following questions in your project write-up:
     
     \item If the pump is locked and dispensing, is it possible for the \emph{patient} to alter the medicine he is receiving? If your answer is yes, provide a trace that justifies your answer.
     
-    \textbf{Answer:} No. Changing settings is possible only in unlocked state.
+    \textbf{Answer:} No. Changing of settings is possible only when the pump is in unlocked state.
     
     \item Does this version have any behavior that you feel is inconsistent with the pump specification? Could it be fixed?
     
@@ -117,9 +117,32 @@ briefly explain why you answered it in the way you did, based on
 explain why. (Note: Reference certain parts of your specification that address features, ambiguities, or errors in each question.)
 
 \begin{enumerate}
-    \item Which aspects of the pump did you choose to model, and which did you choose to leave out?
-    \item Were there ambiguities in the English description of the infusion pump that your specification resolves?
-    \item State four general properties that your pump guarantees (for example, the alarm will always sound if a line becomes clogged), and say briefly why it is guaranteed.
+    \item Which aspects of the pump did you choose to model, and which did you choose to leave out? \\
+    \textbf{Answer:} The following is modelled in our specifications:
+    \begin{enumerate}
+        \item power outage when the pump is administering medications
+        \item alarm when pump is operating using the battery and battery is depleting
+        \item sleep mode when no user interaction is happening during long periods of time when it's needed (some parameters have not been set yet, for example)
+        \item drug library
+    \end{enumerate}
+    The rest of specifications is not modeled, including
+    \begin{enumerate}
+        \item overheating
+        \item battery charge error
+        \item etc.
+    \end{enumerate}
+    \item Were there ambiguities in the English description of the infusion pump that your specification resolves?\\
+    \textbf{Answer:} There are some. For example it does not state what happens when electrical failure occurs and battery is uncharged. It says only that transition does not happen. In the proposed model we suppose that battery is properly charged, so that it's never the case that battery is uncharged immediately when power goes off (assuming battery has been charging).
+    
+    \item State four general properties that your pump guarantees (for example, the alarm will always sound if a line becomes clogged), and say briefly why it is guaranteed. \\
+    \textbf{Answer:} The following is guaranteed by our specifications:
+    \begin{enumerate}
+        \item whenever battery power goes too low either the alarm sounds or pump get connected to grid immediately, because only these transitions are possible at that moment
+        \item user can reset the device settings only when it is operating using external power supply (for safety reasons), because transition to settings of pump is not specified when pump is using battery
+        \item whenever power outage happens the pump notifies the personnel by the visual signal and switches to battery, cause that's the only option at that moment
+        \item hard and soft limits get checked every time the pump is started up using some drug values, because only through that check it's possible for the pump to reach delivering medication mode 
+    \end{enumerate}
+    
     \item Does your model say what happens if the power goes out in the middle of operation? 
     \\
     \textbf{Answer:} Yes. The proposed model describes how the pump must behave when power goes off when pump is delivering the medications. 
